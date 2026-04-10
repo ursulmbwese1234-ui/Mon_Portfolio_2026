@@ -1,38 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.CSS">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <title>Mon portfolio</title>
+    <title>Mon portefolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <HEader>
+    <header>
         <div>
-            <a href="">Mon Portfolio</a>  
+        <a href="">Mon portfolio</a>    
         </div>
         <nav>
-            <ul>     
-          <li><a href="Index.html"class="active">Accueil</a></li>
-          <li><a href="projet.HTML">projet</a></li>
-          <li><a href="passions.HTML">passions</a></li>
-          <li><a href="Divertissement.HTML">Divertissement</a></li>
-          <li><a href="contact.HTML">contact</a></li>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+
+                <li><a href="projet.html"class=active>Projet</a></li>
+
+                <li><a href="passion.html">passion</a></li>
+
+                <li><a href="divertissement.html">Divertissement</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </HEader>
-   <main>
-    <h1>contactez-nous</h1>
-   </main>
-       <p>&copy; 2026 Ursule. tous droits réservés.</p>
-    
+    </header> 
+    <main>
+    <section class="contact-container">
+        <h2>Contactez-moi</h2>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Mes coordonnées</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Basé à : Lubumbashi, RDC</p>
+                <p><i class="fa-solid fa-phone"></i> Téléphone : +243 976004269</p>
+                
+                <div class="social-buttons">
+                    <a href="https://wa.me/243831549268" target="_blank" class="btn-social whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://t.me/+243831549268" target="_blank" class="btn-social telegram">
+                        <i class="fa-brands fa-telegram"></i> Telegram
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" placeholder="MBWESE MUTATA URSULE" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0976004269" required>
+                </div>
+                <button type="submit" class="hero a" style="border:none; cursor:pointer; width:100%;">Envoyer</button>
+            </form>
+        </div>
+    </section>
+</main>
+    <footer>
         <div>
-            <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        </div>  
-    </Footer>
-</body>
-</html>
+            <p>&copy; 2026 ursule tous les droits réservés</p>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+ </body>
+ </html>
+      

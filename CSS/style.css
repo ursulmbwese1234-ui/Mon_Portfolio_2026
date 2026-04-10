@@ -252,9 +252,6 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    
 }
 
 .nav-container {
@@ -305,7 +302,6 @@ nav a.active {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: 0.3s;
-    text-align: left;
 }
 
 .card:hover {
@@ -359,4 +355,185 @@ footer {
     background: #6c63ff;
     color: white;
 }
- 
+ --- Styles additionnels pour la page Contact --- */
+
+.contact-container {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.contact-content {
+    display: flex;
+    gap: 4rem;
+    margin-top: 3rem;
+    flex-wrap: wrap; /* Pour que ce soit responsive sur mobile */
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    color: var(--gris-tres-fonce);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    color: var(--gris-fonce);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: var(--violet-doux);
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.btn-social {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.btn-social:hover {
+    opacity: 0.8;
+}
+
+/* Style du formulaire */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gris-tres-fonce);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+    background-color: white;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+.passions {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.passions h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.passions .intro {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.passions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.divertissement {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.divertissement h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.divertissement .intro {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.div-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.div-card {
+  background: linear-gradient(135deg, #f9f9f9, #e6f0ff);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.div-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.div-card h2 {
+  margin-bottom: 10px;
+}
+
+.div-card p {
+  color: #666;
+}
+
+.div-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
